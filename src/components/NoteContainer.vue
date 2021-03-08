@@ -13,9 +13,6 @@ export default {
     },
     computed: {
         ...mapState(['notes'])
-    },
-    mounted () {
-        console.log(this.notes);
     }
 }
 </script>
