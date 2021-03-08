@@ -1,0 +1,164 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #F0F0F0;
+    overflow: auto;
+}
+
+.navbar {
+    min-height: auto;
+    border-bottom: 1px solid grey;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    min-height: auto;
+}
+
+.navbar img {
+    width: auto;
+    height: 40px;
+}
+
+.content {
+    max-width: 70%;
+    margin: auto;
+}
+
+.input-container {
+    border-radius: 8px;
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 50, 0.3);
+}
+
+input, textarea {
+    border-radius: 0px !important;
+    border: none !important;
+}
+
+input:focus, textarea:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    border-bottom: 1px solid lightgray !important;
+}
+
+.add-button {
+    position: absolute;
+    bottom: -20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #6F5EF9 !important;
+    color: white;
+    right: 30px;
+}
+
+.add-button:hover {
+    background-color: #6F5EF9 !important;
+    color: white;
+}
+
+.add-button:disabled {
+    opacity: 1;
+    cursor: not-allowed;
+}
+
+.notes {
+    width: calc(100% + 10px);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-top: 20px;
+}
+
+.note {
+    /* display: inline-block; */
+    width: auto;
+    flex: 1;
+    max-width: 350px;
+    min-width: 150px;
+    margin-bottom: 1.5rem;
+    height: 100%;
+    border-radius: 8px;
+    background: white;
+    border-radius: 1px solid lightgray;
+    color: black;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 50, 0.3);
+    margin: 5px;
+}
+
+.note p {
+    word-break: break-all;
+}
+
+.note-content {
+    padding: 15px;
+}
+
+.note-options {
+    padding: 14px 0;
+    border-top: 1px solid lightgray;
+}
+
+.notes .icon {
+    width: 10px;
+    height: 10px;
+    margin: 0 10px;
+    color: lightslategray;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.modal {
+    display: block;
+}
+
+.modal-content {
+    height: auto;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.modal-content h4 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.modal-content input {
+    font-weight: bold;
+}
+
+.confirm-button {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+    float: right;
+}
+
+.confirm-button.green {
+    background-color: green !important;
+}
+
+.confirm-button.red {
+    background-color: red !important;
+}
+
+.confirm-button:hover {
+    color: white;
+}
+
